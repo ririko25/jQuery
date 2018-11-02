@@ -1,0 +1,132 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>jquery練習</title>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+</head>
+<script>
+
+$(window).on("scroll",function(){
+    $(".headNavi").removeClass("active")
+    if($(this).scrollTop()>$(".contactArea").offset().top){
+        $(".secCONTACT").addClass("active")
+    }else if($(this).scrollTop() > $(".serviceArea").offset().top){
+        $(".secSERVICE").addClass("active")
+    }else{
+        $(".secTOP").addClass("active")
+    }
+})
+
+$(function(){
+    $(".top").on("click",function(){
+        $("html,body").animate({scrollTop: 0},500);
+    })
+    $(".contact-btn").on("click",function(){
+        console.log($(".contact").offset())
+        var position = $(".contact").offset().top -300
+        $("html,body").animate({scrollTop:position},500)
+    })
+})
+
+
+</script>
+
+
+<style>
+   
+</style>
+<body>
+
+    
+　  <p>
+        Lorem ipsum dolor<br> 
+        Ut enim ad minim veniam, <br>
+        dolor in reprehenderit in <br>
+        non proident, sunt in cul<br>
+        Lorem ipsum dolor<br> 
+        Ut enim ad minim veniam, <br>
+        dolor in reprehenderit in <br>
+        non proident, sunt in cul<br>
+        Lorem ipsum dolor<br> 
+        Ut enim ad minim veniam, <br>
+        dolor in reprehenderit in <br>
+        non proident, sunt in cul<br>
+        Lorem ipsum dolor<br> 
+        Ut enim ad minim veniam, <br>
+        dolor in reprehenderit in <br>
+        non proident, sunt in cul<br>
+        Lorem ipsum dolor<br> 
+        Ut enim ad minim veniam, <br>
+        dolor in reprehenderit in <br>
+        non proident, sunt in cul<br>
+        Lorem ipsum dolor<br> 
+        Ut enim ad minim veniam, <br>
+        dolor in reprehenderit in <br>
+        non proident, sunt in cul<br>
+        Lorem ipsum dolor<br> 
+        Ut enim ad minim veniam, <br>
+        dolor in reprehenderit in <br>
+        non proident, sunt in cul<br>
+        Lorem ipsum dolor<br> 
+        Ut enim ad minim veniam, <br>
+        dolor in reprehenderit in <br>
+        non proident, sunt in cul<br>
+        Lorem ipsum dolor<br> 
+        Ut enim ad minim veniam, <br>
+        dolor in reprehenderit in <br>
+        non proident, sunt in cul<br>
+        Lorem ipsum dolor<br> 
+        Ut enim ad minim veniam, <br>
+        dolor in reprehenderit in <br>
+        non proident, sunt in cul<br>
+        Lorem ipsum dolor<br> 
+        Ut enim ad minim veniam, <br>
+        dolor in reprehenderit in <br>
+        non proident, sunt in cul<br>
+        Lorem ipsum dolor<br> 
+        Ut enim ad minim veniam, <br>
+        dolor in reprehenderit in <br>
+        non proident, sunt in cul<br>
+        Lorem ipsum dolor<br> 
+        Ut enim ad minim veniam, <br>
+        dolor in reprehenderit in <br>
+        non proident, sunt in cul<br>
+        Lorem ipsum dolor<br> 
+        Ut enim ad minim veniam, <br>
+        dolor in reprehenderit in <br>
+        non proident, sunt in cul<br>
+        Lorem ipsum dolor<br> 
+        Ut enim ad minim veniam, <br>
+        dolor in reprehenderit in <br>
+        non proident, sunt in cul<br>
+        Lorem ipsum dolor<br> 
+        Ut enim ad minim veniam, <br>
+        dolor in reprehenderit in <br>
+        non proident, sunt in cul<br>
+        Lorem ipsum dolor<br> 
+        Ut enim ad minim veniam, <br>
+        dolor in reprehenderit in <br>
+        non proident, sunt in cul<br>
+        Lorem ipsum dolor<br> 
+        Ut enim ad minim veniam, <br>
+        dolor in reprehenderit in <br>
+        non proident, sunt in cul<br>
+        Lorem ipsum dolor<br> 
+        Ut enim ad minim veniam, <br>
+        dolor in reprehenderit in <br>
+        non proident, sunt in cul<br>
+        Lorem ipsum dolor<br> 
+        Ut enim ad minim veniam, <br>
+        dolor in reprehenderit in <br>
+        non proident, sunt in cul<br>
+        Lorem ipsum dolor<br> 
+        Ut enim ad minim veniam, <br>
+        dolor in reprehenderit in <br>
+        non proident, sunt in cul<br>      
+</p>
+</body>
+</html>
+
+<!-- クローム
+$(".top") -->

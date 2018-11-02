@@ -1,0 +1,137 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>jquery練習</title>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+</head>
+<script>
+
+    $(function(){
+        $(" .top").on("click",function(){
+            $("html,body").animate({scrollTop: 0},500);
+        })
+    })
+
+    $(window).on("scroll",function() {
+        if($(this).scrollTop() > 150){
+        // 50 ピクセル より下にスクロールした時
+        $(".top").removeClass("hide")
+    }else{
+        // 50 ピクセル より上にスクロールした時
+        $(".top").addClass("hide")       
+    }
+})
+
+</script>
+
+
+<style>
+    .top{
+        position:fixed;
+        width:100px;
+        height:100px;
+        border-radius:50%;
+        bottom:0;
+        background: #333;
+        color:#fff;
+        text-align:center;
+        line-height: 65px;
+    }
+.hide{
+    display:none;
+}
+</style>
+<body>
+
+    <div class="top">
+    <p>top</p>
+    </div>
+<p>
+        Lorem ipsum dolor<br> 
+        Ut enim ad minim veniam, <br>
+        dolor in reprehenderit in <br>
+        non proident, sunt in cul<br>
+        Lorem ipsum dolor<br> 
+        Ut enim ad minim veniam, <br>
+        dolor in reprehenderit in <br>
+        non proident, sunt in cul<br>
+        Lorem ipsum dolor<br> 
+        Ut enim ad minim veniam, <br>
+        dolor in reprehenderit in <br>
+        non proident, sunt in cul<br>
+        Lorem ipsum dolor<br> 
+        Ut enim ad minim veniam, <br>
+        dolor in reprehenderit in <br>
+        non proident, sunt in cul<br>
+        Lorem ipsum dolor<br> 
+        Ut enim ad minim veniam, <br>
+        dolor in reprehenderit in <br>
+        non proident, sunt in cul<br>
+        Lorem ipsum dolor<br> 
+        Ut enim ad minim veniam, <br>
+        dolor in reprehenderit in <br>
+        non proident, sunt in cul<br>
+        Lorem ipsum dolor<br> 
+        Ut enim ad minim veniam, <br>
+        dolor in reprehenderit in <br>
+        non proident, sunt in cul<br>
+        Lorem ipsum dolor<br> 
+        Ut enim ad minim veniam, <br>
+        dolor in reprehenderit in <br>
+        non proident, sunt in cul<br>
+        Lorem ipsum dolor<br> 
+        Ut enim ad minim veniam, <br>
+        dolor in reprehenderit in <br>
+        non proident, sunt in cul<br>
+        Lorem ipsum dolor<br> 
+        Ut enim ad minim veniam, <br>
+        dolor in reprehenderit in <br>
+        non proident, sunt in cul<br>
+        Lorem ipsum dolor<br> 
+        Ut enim ad minim veniam, <br>
+        dolor in reprehenderit in <br>
+        non proident, sunt in cul<br>
+        Lorem ipsum dolor<br> 
+        Ut enim ad minim veniam, <br>
+        dolor in reprehenderit in <br>
+        non proident, sunt in cul<br>
+        Lorem ipsum dolor<br> 
+        Ut enim ad minim veniam, <br>
+        dolor in reprehenderit in <br>
+        non proident, sunt in cul<br>
+        Lorem ipsum dolor<br> 
+        Ut enim ad minim veniam, <br>
+        dolor in reprehenderit in <br>
+        non proident, sunt in cul<br>
+        Lorem ipsum dolor<br> 
+        Ut enim ad minim veniam, <br>
+        dolor in reprehenderit in <br>
+        non proident, sunt in cul<br>
+        Lorem ipsum dolor<br> 
+        Ut enim ad minim veniam, <br>
+        dolor in reprehenderit in <br>
+        non proident, sunt in cul<br>
+        Lorem ipsum dolor<br> 
+        Ut enim ad minim veniam, <br>
+        dolor in reprehenderit in <br>
+        non proident, sunt in cul<br>
+        Lorem ipsum dolor<br> 
+        Ut enim ad minim veniam, <br>
+        dolor in reprehenderit in <br>
+        non proident, sunt in cul<br>
+        Lorem ipsum dolor<br> 
+        Ut enim ad minim veniam, <br>
+        dolor in reprehenderit in <br>
+        non proident, sunt in cul<br>
+        Lorem ipsum dolor<br> 
+        Ut enim ad minim veniam, <br>
+        dolor in reprehenderit in <br>
+        non proident, sunt in cul<br>
+        Lorem ipsum dolor<br> 
+        Ut enim ad minim veniam, <br>
+        dolor in reprehenderit in <br>
+        non proident, sunt in cul<br>      
+</p>
+</body>
+</html>
